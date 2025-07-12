@@ -1,0 +1,153 @@
+body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #2c2c54;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput, #dueDateInput {
+    flex-grow: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #40407a;
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+#taskInput::placeholder {
+    color: #a0a0d0;
+}
+
+#dueDateInput::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+#addTaskBtn {
+    padding: 0 20px;
+    border: none;
+    background-color: #706fd3;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskBtn:hover {
+    background-color: #5d5aab;
+}
+
+.controls-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#filterBtn, #deleteAllBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#filterBtn {
+    background-color: #474787;
+    color: #e0e0e0;
+}
+
+#filterBtn:hover {
+    background-color: #3b3b6d;
+}
+
+#deleteAllBtn {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#deleteAllBtn:hover {
+    background-color: #cc0000;
+}
+
+.task-list-container {
+    background-color: #40407a;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #2c2c54;
+}
+
+th {
+    color: #a0a0d0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+td {
+    color: #ffffff;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+#no-task-row td {
+    text-align: center;
+    color: #a0a0d0;
+    padding: 20px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.action-btn:hover {
+    opacity: 0.7;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    color: #a0a0d0;
+}
